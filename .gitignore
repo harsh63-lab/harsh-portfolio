@@ -39,3 +39,27 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# logs
+*.log
+
+# editor / OS / local tooling
+.idea/
+.vscode/
+*.swp
+Thumbs.db
+.claude/
+.mcp.json
+
+# local testing artifacts (screenshots, recordings, reports)
+/test-results/
+/playwright-report/
+/screenshots/
+*.webm
+*.mov
+
+# environment and credentials (keep .env.example if one is added)
+!.env.example
+*.key
+*.p12
+.npmrc
