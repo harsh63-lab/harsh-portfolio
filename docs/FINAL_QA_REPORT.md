@@ -2,7 +2,7 @@
 
 **Date:** 31 October 2026  
 **Scope:** Final quality audit with selective refinements: a new hero display treatment and a new brand mark. This was not a redesign.  
-**Status:** Private. Not deployed, not published, not indexable.
+**Status:** Source code is in a public GitHub repository. The website itself is not deployed or hosted anywhere, and it is set to be non-indexable (`site.indexable = false`).
 
 ---
 
@@ -38,7 +38,7 @@ Viewports: **375, 390, 768, 1024, 1280, 1440 px**, in light, dark and `prefers-r
 | Hero name fit | Fills the space between the page margins exactly, one line per row, at all 6 widths (§4) |
 | Fictional projects shown | None. `projects` is empty, so no Work section and no project routes |
 | Privacy | `noindex, nofollow, nocache` on every page; `robots.txt` → `Disallow: /`; `site.indexable = false` |
-| Deployment | None. No deploy configuration, no git remote |
+| Deployment | None. No hosting or deploy configuration; source code only on GitHub (no Pages, no deployments) |
 | Client JS (home, gzipped) | ~297 KB in total (React DOM ~72 KB, Next runtime ~85 KB, app + Motion + GSAP + Lenis ~96 KB) |
 
 ---
@@ -164,7 +164,7 @@ Each was rendered at 96, 48, 32, 24 and 16px, in light and dark, and next to the
   - VoiceOver (macOS and iOS) and NVDA on Windows: heading order, Explorations expand/collapse announcements, Toolkit filter announcements, Desk card names and caption announcements, copy-email status.
 - [ ] **Browser zoom 200% / large text:** hero fit, nav wrapping, Desk card legibility.
 - [ ] **Slow 3G throttling:** hero reveal timing (it waits for the font; the CSS fallback shows it after 2.5s regardless).
-- [ ] **Link previews:** paste the URL into a private chat **after** a domain is configured. Not before, to keep the surprise.
+- [ ] **Link previews:** paste the URL into a chat **after** a domain is configured. Until then, preview images point to `localhost`.
 
 ---
 
